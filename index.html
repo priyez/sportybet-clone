@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.5.3/tailwind.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="bg-gray-400">
+  <div>
+    <!-- header -->
+    <header class="flex items-center  justify-between flex-wrap bg-color py-6 p-6 lg:px-40 ">
+      <div class="flex items-center flex-shrink-0 relative left-36 mr-6">
+        <img class="mr-2" width="180" height="67" src="./src/img/sportybelogo.png" />
+        <img class="" width="100" height="60" src="./src/img/flagNigeria.png" />
+
+      </div>
+      <div class="lg:hidden inline-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:hidden text-white icon-style" viewBox="0 0 20 20"
+          fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+            clip-rule="evenodd" />
+
+        </svg>
+        <p class="ticket-details">Ticket Details</p>
+      </div>
+
+      <label class="block lg:hidden cursor-pointer flex items-center px-3 py-2 icon-style" for="menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+      </svg></label>
+     
+
+      <div class="hidden w-full block flex-grow lg:flex lg:items- lg:w-auto relative header-menu" id="menu">
+
+        <div class="block">
+          <div class="text-sm lg:flex-grow">
+            <a href="#" class="flex mt-4 font-bold lg:inline-flex lg:mt-0 text-yellow-500 hover:text-white mr-4 w-auto justify-between">
+              NGN35.00
+              <span class="w-10 justify-between relative left-2 flex " style="left: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </span>
+            </a>
+            <span class="relative sp">|</span>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              Deposit
+            </a>
+            <span class="relative sp">|</span>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              Bet History
+            </a>
+            <span class="relative sp">|</span>
+            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+              My Account
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="sub-header">
+      <div class="flex items-center justify-between flex-wrap bg-color p-6  top-14 " style="height:10vh;">
+        <div class="hidden w-full block flex-grow lg:flex lg:items- lg:w-auto relative top-0 ">
+
+          <ul class="flex flex-col font-bold mt-3 mb-1 lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0" style="position: relative; bottom: 15px;">
+            <li>
+              <span class="fixed-logo"><img src="https://s.sporty.net/ng/main/modules/main/desktop/common/core/image/shortLogo.e62322c232.png" width="45" height="80" class="" /></span>
+            </li>
+            <li>
+              <a href="#" class="block text-white text-sm  hover:text-gray-300 py-2  text-center w-14 mx-5">Sports</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white text-sm  hover:text-gray-300 py-2 text-center mx-5">Live Betting</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white text-sm  hover:text-gray-300 py-2 text-center w-14  mx-5">Instant
+                Virtuals</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white text-sm  hover:text-gray-300 py-2 text-center w-14  mx-5">Scheduled
+                Virtuals</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white text-sm  hover:text-gray-300 py-2  text-center w-14 mx-5">Jackpot</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block text-white text-sm  hover:text-gray-300 py-2 text-center w-14  mx-5">Livescore</a>
+            </li>
+            <li>
+              <a href="#" class="block text-white text-sm  hover:text-gray-300 py-2 text-center w-14  mx-5">Results</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block text-white text-sm  hover:text-gray-300 py-2 text-center w-14  mx-5">Promotions</a>
+            </li>
+            <li>
+              <a href="#" class=" text-white text-sm  hover:text-gray-300 py-2 inline-flex text-center w-14 mx-5">
+                App
+                <img src="https://s.sporty.net/ng/main/modules/main/desktop/common/core/image/hotBadge.2313817502.png"  width="25" class="relative " style="bottom: 10px;"/>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block text-white text-sm  hover:text-gray-300 py-2 text-center w-14 mx-3">GMT+100:0</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+    <!-- header -->
+  <!-- body -->
+  <div class="container m-auto lg:p-8 relative top-12">
+
+    <div class="flex flex-wrap -mx-2 mb-8 relative top-0">
+      <div class="hidden lg:block md:w-1/2 lg:w-1/4 px-2 mb-4">
+        <div class="block -mx-2 mb-8">
+          <div class="h-1/3 border-black  px-2">
+            <div class="bg-grey-light w-38 bg-white my-3 h-32">
+              <div class="mt-1 relative">
+                <button type="button" class="relative w-full bg-black border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                  <span class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
+                    <span class="ml-3 block truncate text-white">
+                      24214181
+                    </span>
+                  </span>
+                
+                </button>
+                
+                <div class="w-full m-4 p-2 mb-4 h-12 lg:h-2">
+                  <p class="relative  text-sm rt">Balance</p>
+                
+                  <p class="relative  text-sm lt-h">₦ 00.00  </p>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="h-2/3 px-2">
+            <div class="bg-grey h-auto w-38">
+             
+                <div class="flex-1 flex flex-col p-1 bg-white">
+                 
+                    <div class="flex flex-col sm:flex-row sm:justify-around">
+                    
+                  
+                            <div class="mt-1 w-full px-2">
+                              <div>
+                                <button  class="w-full  text-sm flex justify-between py-2 px-0 text-black cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
+                                    <span class="flex ">
+                                        <span class="mx-1  font-medium">Gifts</span>
+                                    </span> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </button>
+              
+                            </div>
+                            <div>
+                              <button  class="w-full  text-sm flex justify-between py-2 px-0 text-black cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
+                                  <span class="flex ">
+                                      <span class="mx-1  font-medium">Bet History</span>
+                                  </span> <span>
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                      </svg>
+                                  </span>
+                              </button>
+            
+                          </div>
+                                <div >
+                                    <button  class="w-full text-sm flex justify-between py-2 px-0 text-black cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
+                                        <span class="flex ">
+                                            <span class="mx-1 font-medium">Deposit</span>
+                                        </span>
+                  
+                                        <span class="flex items-center">
+                                          <p class="text-xs inline-flex font-extrabold">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" clip-rule="evenodd" />
+                                          </svg>
+                                          Free
+                                        </p>
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                          </svg>
+                                        </span>
+                                    </button>
+                   </div>
+                  
+                                <div>
+                                    <button  class="w-full  text-sm flex justify-between py-2 px-0 text-black cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
+                                        <span class="flex ">
+                                            <span class="mx-1  font-medium">Withdraw</span>
+                                        </span> <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                  
+                                </div>  
+                                <div>
+                                  <button  class="w-full  text-sm flex justify-between py-2 px-0 text-black cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
+                                      <span class="flex ">
+                                          <span class="mx-1  font-medium">Transactions</span>
+                                      </span> <span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                          </svg>
+                                      </span>
+                                  </button>
+                
+                              </div>
+                              <div>
+                                <button  class="w-full  text-sm flex justify-between py-2 px-0 text-black cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
+                                    <span class="flex ">
+                                        <span class="mx-1  font-medium">My Account Info</span>
+                                    </span> <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
+                                          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </button>
+              
+                            </div>
+                              </div>
+                        </div> 
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="w-full md:w-1/2 lg:w-1/2 px-2 mb-4">
+        <div class="w-full  bg-white rounded-md mb-8 text-sm text-grey-dark  detail-div">
+          <div class="flex mb-4 div-one">
+            <div class="w-1/2  h-12">
+              <div class="inline-flex my-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  text-black icon-style "
+                  style=" height: 15px;  width: 50px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                    clip-rule="evenodd" />
+
+                </svg>
+                <p class="back">Back</p>
+              </div>
+            </div>
+            <div class="w-1/2 h-12">
+              <button
+                class="cursor-pointer flex items-center px-3 py-2 border h-1 text-red-600 relative border-zinc-400 text-sm my-4 back-button">
+                Delete
+              </button>
+
+            </div>
+
+
+
+          </div>
+
+          <div class="bg-black text-white lg:bg-transparent lg:text-black">
+            <div class="flex lg:block  mx-6">
+              <div class="w-1/2  h-12 lg:h-4">
+                <p class="relative mt-2 rt">Ticket <span class="hidden lg:inline-flex"> Details</span> <span
+                    class="hidden lg:inline-flex">(</span>ID: 420964 <span class="hidden lg:inline-flex">)</span></p>
+              </div>
+
+              <div class="w-1/2  h-12 lg:h-6">
+                <p class="relative mt-2 lt-h">01/10/2021 18:06</p>
+              </div>
+            </div>
+            <div class="flex lg:flex lg:p-1 lg:bg-green-700 relative mx-6 sub-div-one">
+              <div class="w-1/2  h-12">
+                <p class="relative mt-2 lg:font-extrabold font-semibold  text-white rt">Mutiple</p>
+              </div>
+
+              <div class="w-1/2  h-12">
+                <p class="relative inline-flex mt-2 ml-16 lg:font-extrabold lg:text-white text-green-900 lt">
+                  <svg id="Layer_1" style="width: 15px; position:relative; right:10%;" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs></defs><title>trophy-glyph</title><path class="cls-1 trophy-icon" d="M500.79,79.32A45.29,45.29,0,0,0,466.8,64H423.56q.24-9.54.26-19.2v-.46C423.8,19.77,403.38,0,378.6,0H133.4C108.62,0,88.2,19.77,88.18,44.34v.46q0,9.67.26,19.2H45.2A45,45,0,0,0,.41,115.06c13.06,95.32,74.27,174.53,157.16,214.77,17.3,26.34,37.09,45.9,58.49,56.86a99.3,99.3,0,0,1-2,10.11,102.64,102.64,0,0,1-57.7,67.78c-.06.06-.13.13-.19.06a24.64,24.64,0,0,0,2,45.89,24,24,0,0,0,8.33,1.47H345.4a24.81,24.81,0,0,0,11.94-46.66c-.77-.38-1.55-.7-2.32-1.09A102.57,102.57,0,0,1,298,396.8a99.27,99.27,0,0,1-2-10.11c21.41-11,41.19-30.53,58.49-56.86,82.89-40.24,144.1-119.45,157.16-214.77A44.85,44.85,0,0,0,500.79,79.32ZM26,111.61a19.38,19.38,0,0,1,4.66-15.45A19.14,19.14,0,0,1,45.2,89.6H89.58c4.59,75.74,20.64,143.94,44.41,196.75C76.69,246.53,36,184.24,26,111.61ZM316.32,165l-14.79,14.86a14.66,14.66,0,0,0-4,12.73l3.49,21c2,11.75-10,20.71-20.24,15.16l-18.28-9.91a13.58,13.58,0,0,0-13,0l-18.28,9.91C221,234.26,209,225.3,211,213.55l3.49-21a14.66,14.66,0,0,0-4-12.73L195.68,165c-8.28-8.32-3.71-22.82,7.73-24.53l20.44-3.06a14,14,0,0,0,10.5-7.87l9.14-19.09a13.77,13.77,0,0,1,25,0l9.14,19.09a14,14,0,0,0,10.5,7.87l20.44,3.06C320,142.16,324.6,156.65,316.32,165ZM486,111.61c-10,72.63-50.69,134.93-108,174.74,23.77-52.81,39.82-121,44.41-196.75H466.8a19.14,19.14,0,0,1,14.55,6.56A19.38,19.38,0,0,1,486,111.61Z"/></svg>
+                   Won</p>
+              </div>
+            </div>
+            <div class="block lg:flex  ">
+              <div class="w-1/3 flex lg:block">
+                <div class="flex lg:block relative mx-6 sub-div-two">
+                  <div class="w-1/2 lg:h-4 h-12">
+                    <p class="relative mt-2 lg:text-xs lg:text-gray-400 lg:font-bold rt-two">Total Return</p>
+                  </div>
+
+                  <div class="w-1/2 lg:h-4  h-12">
+                    <p class="relative mt-2 lg:ml-0 ml-24 lg:text-black lg:mt-5  text-green-900 lt-total-return">3,172,300.00</p>
+                  </div>
+                </div>
+                <hr>
+              </div>
+
+              <div class="w-1/3 flex lg:block relative stakeDiv">
+
+                <div class="flex lg:block relative mx-6 sub-div-three">
+                  <div class="w-1/2 lg:h-4 h-12">
+                    <p class="relative mt-2 lg:text-xs lg:mt-5 lg:text-gray-400 lg:font-bold rt-two">Total Stake</p>
+                  </div>
+
+                  <div class="w-1/2 lg:h-4   h-12 ">
+                    <p class="relative mt-2  ml-20 lg:ml-0 lg:text-black text-white lt-total-stake">10,000.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-1/3 flex lg:block relative oddsDiv">
+                <div class="flex lg:block relative mx-6 sub-div-four">
+                  <div class="w-1/2 lg:h-4 h-12">
+                    <p class="relative mt-2 lg:text-xs  lg:text-gray-400 lg:font-bold  lg:mt-10 rt-two">Total Odds</p>
+                  </div>
+
+                  <div class="w-1/2 lg:h-4  h-12">
+                    <p class="relative mt-2 ml-20 lg:m-0 lg:text-black text-white lt-total-odds">374.22</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <hr style="
+          width: 90%;
+          margin: 2.5%;">
+          </div>
+        </div>
+
+        <div class="w-full mt-1 mb-4">
+          <div class="w-full  bg-white rounded-md bock text-sm text-grey-dark h-full pb-5 mb-4">
+            <div class="mb-6">
+              <div class="flex mb-4">
+                <div class="w-1/4 lg:hidden h-12">
+                  <label style="position: relative;left: 15%; top: 80px;"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-700" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+                </div>
+                <div class="w-1/3">
+                  <div class="block lg:flex mb-4">
+                    <div class="w-full lg:w-1/2  h-12">
+      
+                      <div class="">
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                          <div class="w-full lg:w-1/2  block lg:flex items-center justify-center">
+                            <div class="inline-flex text-xs"><span class="lg:hidden">Game ID 19101</span> <span
+                                class="lg:hidden mx-2">|</span>10 12:30
+                            </div>
+                          </div>
+                          <div class="w-1/2  flex items-center text-xs">
+                            <div class="hidden lg:flex">Check Live Tracker ></div>
+                          </div>
+                        </div>
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse relative team-cont">
+                          <div class="w-full lg:w-1/2  block lg:flex items-center justify-center">
+                            <div class="inline-flex lg:block text-xs">
+                              <span class="w-1/2 lg:w-full lg:h-3 block items-center font-semibold text-base lg:text-xs"
+                                style="height:4vh">Man utd</span>
+                              <span class="lg:hidden mx-2 my-1">v</span>
+                              <span
+                                class="w-1/2 lg:w-full lg:h-3   block items-center font-semibold text-base lg:text-xs"
+                                style="height:4vh">Chelsea</span>
+                            </div>
+                          </div>
+                          <div class="text-green-700 text-sm lg:hidden mb-1 inline-flex relative lg:bottom-2" style="bottom: 5px;">
+                            <label style="position: relative;"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mb-0 mx-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                              </svg>
+                            </label>
+                            Match Tracker</div>
+                          <div class="w-1/2  flex items-center text-xs">
+                            <div class="inline-flex lg:block text-xs score-div"><span
+                                class="lg:hidden text-sm relative " style="bottom: 3px;">FT Score:</span>
+                              <span class="w-1/2 lg:w-full lg:h-3 block items-center text-xs home-score">1</span>
+                              <span class="lg:hidden mx-1 my-1 relative" style="bottom: 7px;">:</span>
+                              <span class="w-1/2 lg:w-full lg:h-3   block items-center text-xs away-score">0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-1/2  h-12">
+                      <div class="relative score-cont">
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                          <label>
+                        
+                          </label>
+                        </div>
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                         <div class="lg:bg-transparent bg-gray-300 rounded">
+                           <div class="block p-2">
+                            <p class="h-2 w-full lg:ml-0 ml-3 inline-flex text-sm lg:text-xs  text-gray-600">Pick: <span class="mx-2"></span> <span class="text-black"> 1:1 @1.15</span></p>
+                            <p class="h-2 w-full lg:ml-0 ml-2 inline-flex text-sm lg:text-xs  text-gray-600">Market: <span class="mx-2"></span> <span class="text-black"> Correct Score</span></p>
+                            <p class="h-2 w-full  lg:ml-0 ml-1 inline-flex text-sm lg:text-xs  text-gray-600">Outcome : <span class="mx-2"></span> <span class="text-black">1:1</span></p>
+                           </div>
+                         </div>
+            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+
+              </div>
+             
+            </div>
+            <hr class="hidden lg:block" style="
+            width: 90%;
+    margin: 15% 5% 5% 5%;">
+
+
+            <div class="mb-6"> 
+              <div class="flex mb-4">
+                <div class="w-1/4 lg:hidden h-12">
+                  <label style="position: relative;left: 15%; top: 80px;"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-700" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+                </div>
+                <div class="w-1/3">
+                  <div class="block lg:flex mb-4">
+                    <div class="w-full lg:w-1/2  h-12">
+      
+                      <div class="">
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                          <div class="w-full lg:w-1/2  block lg:flex items-center justify-center">
+                            <div class="inline-flex text-xs"><span class="lg:hidden">Game ID 19101</span> <span
+                                class="lg:hidden mx-2">|</span>10 12:30
+                            </div>
+                          </div>
+                          <div class="w-1/2  flex items-center text-xs">
+                            <div class="hidden lg:flex">Check Live Tracker ></div>
+                          </div>
+                        </div>
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse relative team-cont">
+                          <div class="w-full lg:w-1/2  block lg:flex items-center justify-center">
+                            <div class="inline-flex lg:block text-xs">
+                              <span class="w-1/2 lg:w-full lg:h-3 block items-center font-semibold text-base lg:text-xs"
+                                style="height:4vh">Man utd</span>
+                              <span class="lg:hidden mx-2 my-1">v</span>
+                              <span
+                                class="w-1/2 lg:w-full lg:h-3   block items-center font-semibold text-base lg:text-xs"
+                                style="height:4vh">Chelsea</span>
+                            </div>
+                          </div>
+                          <div class="text-green-700 text-sm lg:hidden mb-1 inline-flex relative lg:bottom-2" style="bottom: 5px;">
+                            <label style="position: relative;"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mb-0 mx-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                              </svg>
+                            </label>
+                            Match Tracker</div>
+                          <div class="w-1/2  flex items-center text-xs">
+                            <div class="inline-flex lg:block text-xs score-div"><span
+                                class="lg:hidden text-sm relative " style="bottom: 3px;">FT Score:</span>
+                              <span class="w-1/2 lg:w-full lg:h-3 block items-center text-xs home-score">1</span>
+                              <span class="lg:hidden mx-1 my-1 relative" style="bottom: 7px;">:</span>
+                              <span class="w-1/2 lg:w-full lg:h-3   block items-center text-xs away-score">0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-1/2  h-12">
+                      <div class="relative score-cont">
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                          <label>
+                        
+                          </label>
+                        </div>
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                         <div class="lg:bg-transparent bg-gray-300 rounded">
+                           <div class="block p-2">
+                            <p class="h-2 w-full lg:ml-0 ml-3 inline-flex text-sm lg:text-xs  text-gray-600">Pick: <span class="mx-2"></span> <span class="text-black"> 1:1 @1.15</span></p>
+                            <p class="h-2 w-full lg:ml-0 ml-2 inline-flex text-sm lg:text-xs  text-gray-600">Market: <span class="mx-2"></span> <span class="text-black"> Correct Score</span></p>
+                            <p class="h-2 w-full  lg:ml-0 ml-1 inline-flex text-sm lg:text-xs  text-gray-600">Outcome : <span class="mx-2"></span> <span class="text-black">1:1</span></p>
+                           </div>
+                         </div>
+            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+
+              </div>
+            </div>
+            <hr style="
+            width: 90%;
+    margin: 15% 5% 5% 5%;">
+            <div class="mb-6">
+              <div class="flex mb-4">
+                <div class="w-1/4 lg:hidden h-12">
+                  <label style="position: relative;left: 15%; top: 80px;"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-700" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                  </label>
+                </div>
+                <div class="w-1/3">
+                  <div class="block lg:flex mb-4">
+                    <div class="w-full lg:w-1/2  h-12">
+      
+                      <div class="">
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                          <div class="w-full lg:w-1/2  block lg:flex items-center justify-center">
+                            <div class="inline-flex text-xs"><span class="lg:hidden">Game ID 19101</span> <span
+                                class="lg:hidden mx-2">|</span>10 12:30
+                            </div>
+                          </div>
+                          <div class="w-1/2  flex items-center text-xs">
+                            <div class="hidden lg:flex">Check Live Tracker ></div>
+                          </div>
+                        </div>
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse relative team-cont">
+                          <div class="w-full lg:w-1/2  block lg:flex items-center justify-center">
+                            <div class="inline-flex lg:block text-xs">
+                              <span class="w-1/2 lg:w-full lg:h-3 block items-center font-semibold text-base lg:text-xs"
+                                style="height:4vh">Man utd</span>
+                              <span class="lg:hidden mx-2 my-1">v</span>
+                              <span
+                                class="w-1/2 lg:w-full lg:h-3   block items-center font-semibold text-base lg:text-xs"
+                                style="height:4vh">Chelsea</span>
+                            </div>
+                          </div>
+                          <div class="text-green-700 text-sm lg:hidden mb-1 inline-flex relative lg:bottom-2" style="bottom: 5px;">
+                            <label style="position: relative;"> 
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mb-0 mx-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd" />
+                              </svg>
+                            </label>
+                            Match Tracker</div>
+                          <div class="w-1/2  flex items-center text-xs">
+                            <div class="inline-flex lg:block text-xs score-div"><span
+                                class="lg:hidden text-sm relative " style="bottom: 3px;">FT Score:</span>
+                              <span class="w-1/2 lg:w-full lg:h-3 block items-center text-xs home-score">1</span>
+                              <span class="lg:hidden mx-1 my-1 relative" style="bottom: 7px;">:</span>
+                              <span class="w-1/2 lg:w-full lg:h-3   block items-center text-xs away-score">0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-1/2  h-12">
+                      <div class="relative score-cont">
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                          <label>
+                        
+                          </label>
+                        </div>
+                        <div class="block w-64 lg:flex my-4 md:flex-row flex-row-reverse">
+                         <div class="lg:bg-transparent bg-gray-300 rounded">
+                           <div class="block p-2">
+                            <p class="h-2 w-full lg:ml-0 ml-3 inline-flex text-sm lg:text-xs  text-gray-600">Pick: <span class="mx-2"></span> <span class="text-black"> 1:1 @1.15</span></p>
+                            <p class="h-2 w-full lg:ml-0 ml-2 inline-flex text-sm lg:text-xs  text-gray-600">Market: <span class="mx-2"></span> <span class="text-black"> Correct Score</span></p>
+                            <p class="h-2 w-full  lg:ml-0 ml-1 inline-flex text-sm lg:text-xs text-gray-600">Outcome : <span class="mx-2"></span> <span class="text-black">1:1</span></p>
+                           </div>
+                         </div>
+            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden lg:block md:w-1/2 lg:w-1/4 mb-4" >
+        <div class="block mx-6 mb-8">
+
+          <div class="h-2/3 px-1">
+            <div class="bg-grey h-54 w-58" style="width: 230px;">
+              <div class='tabs'>
+                <input type='radio' id='r1' name='t' checked
+                ><label class="label font-sans" for='r1'>Betslip</label
+                ><div class='content'>
+                  <div class="w-full p-1 h-full bg-white">
+                       <p class="text-xs p-1 font-sans" style="letter-spacing: 0.5px;"> To place a bet, click on the odds. Or insert a booking code</p>
+                  
+
+                       
+                      </div>
+                  </div
+                ><input type='radio' id='r2' name='t'
+                ><label class="label font-sans"  for='r2'>Cashout</label
+                ><div class='content'>clone app</div
+                ><div id='slider'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-1/3  px-6">
+          <div class="bg-grey-light w-58 my-3 h-32" style="width: 230px;">
+          <img src="https://s.sporty.net/ng/main/modules/main/desktop/common/components/adBar/ng.b02a058b20.jpg" class="w-full"/>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+   
+  </div>
+ 
+  </div>
+</div>
+
+  </div>
+  <!-- body -->
+
+  <!-- Footer -->
+  <footer class="footer-1 bg-gray-800 py-8 sm:py-12">
+    <div class="container mx-auto px-4">
+      <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+        <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+          <h5 class="text-sm font-bold mb-6 text-green-900 underline">Register Now!</h5>
+          <img src="https://s.sporty.net/ng/main/modules/main/desktop/common/core/image/lagos.88bfa1c413.png" width="75" />
+        </div>
+        <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
+          <h5 class="text-sm font-bold mb-6 text-white"> SportyBet Nigeria</h5>
+          <ul class="list-none footer-links text-xs text-white">
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+                About Us</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+               Terms & Conditions</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+                Responsible Gambling</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+               Privacy Policy</a>
+            </li>
+               <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+               Sporty Group</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+          <h5 class="text-sm font-bold mb-6 text-white"> How to Play</h5>
+          <ul class="list-none footer-links text-xs text-white">
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+                FAQ</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+               Sports</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+                LiveBetting</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+                Scheduled Virtuals
+                </a>
+            </li>
+               <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+                Jackpot</a>
+            </li>
+            <li class="mb-1">
+              <a href="#" class="border-b border-solid border-transparent inline-flex hover:border-red hover:text-red">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" style="position: relative;right:5%; bottom:3px;" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+                                
+                Others</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+          <h5 class="text-sm font-bold mb-6 text-white"> Connect with Us</h5>
+        
+        </div>
+        <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+          <div class="flex sm:justify-center xl:justify-start">
+            <a href="" class="w-8 h-8 border  border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="" class="w-8 h-8 border  border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="hidden  lg:flex lg:flex-wrap lg:-mx-4 mt-6 pt-6 lg:mt-12 sm:pt-12 border-t  px-3" >
+        <div class="px-4  block w-1/4 mt-4 md:mt-0">
+          
+          <img class="mr-2" width="140" height="60" src="./src/img/sportybelogo.png" />
+          <img class="" width="80" height="25" src="./src/img/flagNigeria.png" />
+        </div>
+        <div class="px-4 flex  sm:w-1/2 md:w-1/4 mt-4 md:mt-0 relative" style="left:10%">
+          <img class="mx-2" style="
+          width: 100px;
+          height: 50px;"  src="https://s.sporty.net/ng/main/modules/main/desktop/common/core/image/forum@2x.c05a82e567.svg" />
+          <p class="mb-4 text-xs text-white">Must be 18 years of age or older to register or play at SportyBet. Gambles may have adverse effects if not made with moderation.</p>
+        </div>
+        <div class="px-4  flex  w-1/4 mt-4 md:mt-0 relative" style="left:25%">
+          <img class="mx-2" style="
+          width: 100px;
+          height: 50px;"  src="https://s.sporty.net/ng/main/modules/main/desktop/common/core/image/license@2x.c598257514.svg" />
+          <p class="mb-4 text-xs text-white">SportyBet Nigeria is licensed by National Lottery Regulatory Commission (NLRC) under License No 0001014.</p>
+   
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- Footer -->
+</body>
+<script src="./src/script.js"></script>
+
+</html>
+
+
+
+
+
+
+
+

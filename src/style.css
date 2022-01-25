@@ -1,0 +1,339 @@
+ body{
+     overflow-x:hidden;
+ }
+ .detail-div{
+     height: 38vh;
+ }
+
+
+nav{
+    transition: background-color 0.3s ease;
+    position: fixed;
+    width:100%;
+    top: 10%;
+    z-index: 5;
+  }
+  .trophy-icon{
+    fill:#fff
+}
+  .sp{
+      right: 5px;
+      color: #fff;
+  }
+  .header-menu{
+      left: 35%;
+  }
+  .top-14{
+      top: 60px;
+  }
+  .w-14{
+      width: 56px;
+  }
+  .top-4{
+      top:16px;
+  }
+   .bg-color{
+       background-color: #e41827;
+   }
+   .top-12{
+     top:48px;
+   }
+   .left-36 {
+       left: 144px;
+   }
+   .w-38{
+      width: 160px;
+   }
+   .h-54{
+       height: 25vh;
+   }
+   .rt-two{
+    position: relative;
+    right: 12%;
+    width: 100px;
+}
+
+
+   .fixed-logo{
+       display:none;
+      
+   }
+
+   .back-button{
+    left:67%;
+}
+
+.sub-div-one{
+
+    left: 0%;
+    height: 5vh;
+}
+.rt{
+    position: relative;
+    bottom: 5px;
+}
+.lt{
+    position: relative;
+    left: 45%;
+    bottom: 5px;
+}
+.oddsDiv{
+    left: 14%;
+}
+.stakeDiv{
+    left: 7%;
+}
+
+
+
+.team-cont{
+    bottom:auto;
+}
+
+.score-cont{
+    left: 200%;
+}
+
+.score-div{
+    position: relative;
+    left: 80%;
+    bottom: 25%;
+}
+
+.home-score{
+    height: 3vh;
+    margin: 30% 5%;
+    width: 15px;
+    line-height: 1.2;
+    border: solid 1px;
+    /* margin-bottom: 15%; */
+    text-align: center;
+    background: #cbd5e0;
+}
+.away-score{
+    height: 3vh;
+    position: relative;
+    left: 10%;
+    line-height: 1.2;
+    border: solid 1px;
+    text-align: center;
+    background: #cbd5e0;
+}
+
+
+
+/* tab slide */
+.tabs {
+    position: relative;
+    left: 50%;
+    height: 50vh;
+    min-width: 220px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .label, #slider {
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    background: rgb(34, 32, 34);
+    color: #AAA;
+    width: 115px;
+    height: auto;
+    padding: 20px 0px;
+  }
+  
+  .label:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tabs [type=radio] {
+    display: none;   
+  }
+  
+  .content {
+    position: absolute;
+    top: 50px; right: 0; bottom: 0; left: 0;
+    background: rgb(2, 2, 19);
+    padding: 5px;
+    display: none;
+  }
+  
+  #slider {
+    background-color: transparent;
+    position: absolute;
+    border-bottom: 3px solid rgb(16, 130, 26);
+    margin: 7px 10px;
+    transition: transform 0.5s;
+    width: 100px;
+  }
+  
+  [type=radio],#r1:checked ~ #slider {
+    transform: translate(-240px, 0px);
+  }
+  
+  [type=radio],#r2:checked ~ #slider {
+    transform: translate(-130px, 0px);
+  }
+  
+  
+  [type=radio]:checked + .label {
+    color: white;
+  }
+  
+  [type=radio]:checked + .label + .content {
+    display: inline-block;
+  }
+   @media (max-width: 600px) {
+       .detail-div{
+           height: 30vh;
+       }
+nav{
+    display: none;
+}
+
+.top-12{
+    top:0;
+  }
+
+
+.div-one{
+    display: none;
+}
+
+.left-36 {
+display: none;
+}
+header{
+    height: 8vh;
+}
+.icon-style{
+    position: relative;
+    top: -15px;
+}
+.trophy-icon{
+    fill:#0D9737
+}
+.ticket-details{
+    position: relative;
+    top: -15px;
+    left: 10%;
+    font-size: 20px;
+    color: #fff;
+}
+.back{
+    position: relative;
+    top: -15px;
+    left: 10%;
+    font-size: 20px;
+    color: rgb(4, 3, 3);
+}
+
+.rt{
+    position: relative;
+    right: 10%;
+    bottom: 0;
+}
+
+
+.lt-h{
+    position: relative;
+    left: 40%;
+    bottom: 0;
+}
+.rt-two{
+    position: relative;
+    right: 12%;
+    width: 100px;
+}
+.lt-total-return{
+    position: relative;
+    left: 22%;
+    font-weight: 900;
+}
+.lt-total-stake{
+    position: relative;
+    left: 50%;
+    font-weight: 900;
+}
+.lt-total-odds{
+    position: relative;
+    left: 70%;
+    font-weight: 900;
+}
+.lt{
+    position: relative;
+    left: 40%;
+    bottom: 0;
+}
+.stakeDiv{
+    left: auto;
+}
+
+.oddsDiv{
+    left: auto;
+}
+
+
+
+.sub-div-one{
+    left:0;
+    height: auto;
+    bottom:25px;
+}
+.sub-div-two{
+    bottom:50px;
+}
+.sub-div-three{
+
+    bottom:60px;
+}
+.sub-div-four{
+    bottom:80px;
+}
+
+
+
+
+.team-cont{
+    bottom: 0.7rem;
+}
+
+
+
+.score-cont{
+    left:auto;
+    top: 1.4rem;
+}
+
+.score-div{
+    position: relative;
+    left: 1%;
+    bottom: 7px;
+}
+
+.home-score{
+    height: 3vh;
+    margin: 0;
+    width: 5px;
+    line-height: 1.2;
+    border: none;
+    /* margin-bottom: 15%; */
+    text-align: center;
+    background: #ffffff;
+}
+.away-score{
+    height: 3vh;
+    margin: 0;
+    width: 1px;
+    line-height: 1.2;
+    border:none;
+    /* margin-bottom: 15%; */
+    text-align: center;
+    background: #ffffff;
+}
+
+   }
+
+
+   
